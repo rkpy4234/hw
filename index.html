@@ -32,8 +32,14 @@
         table {
             width: 100%;
             border-collapse: collapse;
+           
         }
 
+        th{
+            position: sticky;
+            top: 0px;
+            background-color: var(--hover-txt-color);
+        }
         th,
         td {
             padding: 8px;
@@ -46,6 +52,10 @@
         .container-fluid{
             margin-top: 100px;
             padding: 0;
+            width: 100%;
+            align-items: center;
+            text-align: center;
+            
         }
         h1{
             font-size: 27px;
@@ -58,8 +68,19 @@
             font-size: 18px;
         }
         .view{
+            
             border-top: 2px solid var(--header);
+            max-width: 400px;
+            height: 590px;
+            overflow-x: scroll;
+            overflow-y: scroll;
+            box-shadow: var(--box-shadow);
+           
+        }
+        .container{
             width: 100%;
+            display: flex;
+            justify-content: center;
         }
      
     </style>
@@ -95,16 +116,16 @@
             <h1>H.W Scout Crew</h1>
             <p>Pashupati-8, Devpatan</p>
         </div>
-        
+        <h2>Teej Service Team <p>2081-05-21</p></h2>
         <div class="container">
-            <h2>Teej Service Team <p>2081-05-21</p></h2>
+            
             
             <div class="view">
                
 
                 <table id="data-table" class="table table-striped">
                     <thead>
-                        <tr>
+                        <tr style="background-color: #87b2ec;  position: sticky; top: 0px;">
                             <th>N.</th>
                             <th>Name</th>
                             <th>Phone</th>
